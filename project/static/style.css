@@ -1,0 +1,87 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #e3f2fd);
+    color: #333;
+    background-image: url('/templates/hari.png');
+    text-align: center;
+    padding: 60px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Center container */
+.ctr {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Title */
+h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #0077cc;
+}
+
+/* Labels */
+label {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* File input */
+input[type="file"] {
+    margin-top: 8px;
+    font-size: 15px;
+    padding: 6px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    cursor: pointer;
+    transition: border 0.3s ease;
+}
+input[type="file"]:hover {
+    border: 2px solid #0077cc;
+}
+
+/* Button */
+button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover {
+    background: #005fa3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
